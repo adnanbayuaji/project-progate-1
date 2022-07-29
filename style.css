@@ -40,34 +40,23 @@ iframe {
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
-
-
-/* Small Screens */
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
 
 .top-wrapper {
-    padding: 70px 0 100px 0;
+    padding: 180px 0 100px 0;
     background-image: url(img/bg-marketplace.jpg);
     background-size: cover;
-    color: white;
+    color: red;
     text-align: center;
   }
   
   .top-wrapper h1 {
     opacity: 1;
     font-size: 45px;
-    letter-spacing: 0px;
+    letter-spacing: 5px;
     margin-bottom: 10px;
     color: #ce1820;
     
@@ -80,6 +69,7 @@ iframe {
   }
   
   .btn-wrapper {
+    text-align: center;
     margin: 20px 0;
   }
   
@@ -106,6 +96,7 @@ iframe {
     display: inline-block;
     opacity: 0.8;
     border-radius: 4px;
+    text-align: center;
   }
   
   .btn:hover {
@@ -114,25 +105,7 @@ iframe {
   
   .fa {
     margin-right: 5px;
-  }  
-
-
-/* Medium Screens */
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-
-/* Large Screens */
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
+  }
 
 a.nav-link {
     color: hsl(229, 31%, 21%);
@@ -212,40 +185,11 @@ a.nav-link:hover {
     right: 0;
 }
 
-@media (max-width: 992px) {
-    .header .nav-bar {
-        position: fixed;
-        top: 0;
-        right: -300px;
-        min-width: 280px;
-        height: 100%;
-        background: #fff;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: 70px;
-        box-shadow: 0 0 10px hsl(240deg 40% 93%);
-    }
-}
-
 .header .nav-link {
     height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 992px) {
-    .header .nav-link {
-        display: block;
-        width: 100%;
-        height: initial;
-        padding: 15px;
-        font-size: 17px;
-    }
-    .header .nav-link:hover {
-        padding-left: 25px;
-    }
 }
 
 .header .nav-bar .nav-link {
@@ -262,20 +206,6 @@ a.nav-link:hover {
     color: var(--soft-red);
 }
 
-@media (max-width: 992px) {
-    .header .nav-bar .close {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .header .toggle-menu {
-        display: block;
-    }
-}
 
 .header .nav-bar .close i,
 .header .toggle-menu i {
@@ -286,12 +216,18 @@ a.nav-link:hover {
 
 
 /* End Header */
+.clear {
+  clear: left;
+}
 
 .rw{
   width: 100%;
   margin-top:1rem ;
 }
 
+.rw h3{
+  margin-left: 10px;
+}
 
 .cls{
   display: inline-flex;
@@ -354,33 +290,6 @@ a.nav-link:hover {
   border-radius: 10px;
   border: none;
   cursor: pointer;
- 
-  
-}
-
-
-@media all and (max-width:640px) {
-  .cls{
-    width: 100% !important;
-    margin-bottom: 1rem;
-  }
-}
-
-@media all and (min-width:641px ) and (max-width:800px ) {
-  .cls{
-    width: 25%;
-  }
-}
-
-
-@media all and (min-width:801px )and (max-width:1008px ) {
-  .cls{
-    width: 25%;
-  }
-}
-
-
-@media all and (min-width:1009px ) {
   
 }
 
@@ -388,14 +297,14 @@ a.nav-link:hover {
   background-color: rgb(255, 245, 249);
   color: #fff;
   height: 425px;
-  padding: 40px;
+  padding: 20px;
   
 }
 
 ul {
   list-style: none;
   margin: 0px;
-  padding: 60px 0px;
+  padding: 40px 0px;
   text-align: left;
 }
 li {
